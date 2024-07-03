@@ -1,0 +1,295 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Page_Navigation_App.View"
+             Style="{StaticResource Page_Style}"
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="622">
+
+    <Border CornerRadius="0,20,20,0" 
+        Background="#212529"
+        Margin="0,5,5,0">
+        <Grid>
+            <ContentControl x:Name="Pages" Margin="85,57,144,142" >
+                <Border CornerRadius="20,20,20,20" 
+                        x:Name="Border"
+                        Margin="-16,19,178,142" 
+                        Style="{StaticResource BorderStyle}"
+                        >
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF515772"/>
+                            <GradientStop Color="#FF122158" Offset="0.97"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Button HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" 
+                            x:Name="InputButton"
+                            Style="{StaticResource CustomButtonStyle}"
+                            Height="250"
+                            Width="250"
+                            Background="Transparent"
+                            Click="Button_Click">
+                        <Image x:Name="Display"
+                               Source="../Images/Add_ring.png"
+                               Margin="-10 0 0 0"
+                               Stretch="UniformToFill"
+                               Width="120" 
+                               Height="120"/>
+                    </Button>
+
+                </Border>
+
+            </ContentControl>
+            <ContentControl x:Name="Pages复制__C_" Margin="359,57,-130,142" >
+                <Border CornerRadius="20,20,20,20" 
+                        x:Name="BorderCopy"
+                        Margin="-16,19,178,142" 
+                        Style="{StaticResource BorderStyle}"
+                        >
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF122158"/>
+                            <GradientStop Color="#FF515772" Offset="0.97"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Image x:Name="Output"
+                           Margin="-10,0,0,0" 
+                           Stretch="UniformToFill"
+                           Width="250" 
+                           Height="250" 
+                           MouseLeftButtonDown="Output_OnMouseLeftButtonDown"
+                           />
+                </Border>
+
+            </ContentControl>
+            <Label Content="Input" 
+                   Style="{StaticResource Label_Style}"
+                   Foreground="Snow" 
+                   Margin="151,323,0,0" 
+                   VerticalAlignment="Top" 
+                   Width="64"/>
+            <Label Content="Output" 
+                   Style="{StaticResource Label_Style}"
+                   Foreground="Snow" 
+                   Margin="427,323,0,0" 
+                   VerticalAlignment="Top" 
+                   Width="72"/>
+
+            <ui:DropDownButton x:Name="DropDownButton_Align" 
+                               Content="Choose Operation"
+                               Margin="71,402,0,0" 
+                               VerticalAlignment="Top" 
+                               FontSize="18"
+                               Width="237">
+                <ui:DropDownButton.Flyout>
+                    <ui:MenuFlyout Placement="BottomEdgeAlignedLeft">
+                        <MenuItem Header="Color mode">
+                            <MenuItem.Items>
+                                <MenuItem Header="To HSV" Click="MenuItem_Click"/>
+                                <MenuItem Header="To Gray" Click="MenuItem_Click_1"/>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Basic Operation">
+                            <MenuItem.Items>
+                                <MenuItem Header="Arithmetic Operation">
+                            <MenuItem.Items>
+                                <MenuItem Header="Add">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Add Self" Click="Click_Add_Self" />
+                                        <MenuItem Header="Add Other" Click="Click_Add_Other" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Subtract">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Subtract Self" Click="Click_Subtract_Self"/>
+                                        <MenuItem Header="Subtract Other" Click="Click_Subtract_Other"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Multiply">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Multiply Self" Click="Click_Multiply_Self" />
+                                        <MenuItem Header="Multiply Other" Click="Click_Multiply_Other" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Divide">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Divide Self" Click="Click_Divide_Self" />
+                                        <MenuItem Header="Divide Other" Click="Click_Divide_Other" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Bit Operation">
+                            <MenuItem.Items>
+                                <MenuItem Header="And">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="And Self" Click="Click_And_Self" />
+                                        <MenuItem Header="And Other" Click="Click_And_Other" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Or">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Or Self" Click="Click_Or_Self" />
+                                        <MenuItem Header="Or Other" Click="Click_Or_Other" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Resize" Click="Click_resize"/>
+                        <MenuItem Header="Rotate" Click="Click_rotate"/>
+                        <MenuItem Header="Translate" Click="Click_translate"/>
+                        <MenuItem Header="AffineTransform" Click="Click_affine_transform"></MenuItem>
+                        <MenuItem Header="Flip">
+                            <MenuItem.Items>
+                                <MenuItem Header="X-Axis" Click="Click_Flip_x"/>
+                                <MenuItem Header="Y-Axis" Click="Click_Flip_y"/>
+                                <MenuItem Header="Both" Click="Click_Flip_xy"/>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="DFT" Click="Click_Dft"/>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Image Enhancement">
+                            <MenuItem.Items>
+                                <MenuItem Header="Gray Scale">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Log Transformation" Click="Click_Log_Transformation"/>
+                                        <MenuItem Header="Linear Transformation" Click="Click_Linear_Transformation"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Hist Operation">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Hist Normalization" Click="Click_Hist_Normalization"/>
+                                        <MenuItem Header="Hist Equalization" Click="Click_Hist_Equalization"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
+                            </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Image Segmentation">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Thresholding">
+                                            <MenuItem.Items>
+                                                <MenuItem Header="Triangle Thresholding" Click="Click_Threshold_Triangle"/>
+                                                <MenuItem Header="Otsu Thresholding" Click="Click_Otsu_Thresholding"/>
+                                                <MenuItem Header="Trunc Thresholding" Click="Click_Trunc_Threshold"/>
+                                                <MenuItem Header="Tozero Thresholding" Click="Click_Threshold_Tozero"/>
+                                            </MenuItem.Items>
+                                        </MenuItem>
+                                        <MenuItem Header="Hough Transformation">
+                                            <MenuItem.Items>
+                                                <MenuItem Header="Hough Lines algorithm" Click="Click_Hough_Lines" />
+                                                <MenuItem Header="Hough Lines P algorithm" Click="Click_Hough_LinesP" />
+                                            </MenuItem.Items>
+                                        </MenuItem>
+                                        <MenuItem Header="Edge Detection">
+                                            <MenuItem.Items>
+                                                <MenuItem Header="Roberts algorithm" Click="Click_ed_roberts" />
+                                                <MenuItem Header="Sobel algorithm" Click="Click_ed_sobel" />
+                                                <MenuItem Header="Laplacian algorithm" Click="Click_ed_laplacian"/>
+                                                <MenuItem Header="LogG algorithm" Click="Click_ed_logG"/>
+                                                <MenuItem Header="Canny algorithm" Click="Click_ed_canny"/>
+                                            </MenuItem.Items>
+                                        </MenuItem>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Image Smoothing">
+                            <MenuItem.Items>
+                                <MenuItem Header="Spatial Domain">
+                                    <MenuItem Header="Mean Filter" Click="Click_Spatial_Mean_Filter" />
+                                </MenuItem>
+                                <MenuItem Header="Frequency Domain">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Ideal LowPass" Click="Click_Frequency_Ideal_LowPass" />
+                                        <MenuItem Header="Butterworth LowPass" Click="Click_Frequency_Butterworth_LowPass" />
+                                        <MenuItem Header="Gaussian LowPass" Click="Click_Frequency_Gaussian_LowPass" />
+                                    </MenuItem.Items>
+                                </MenuItem>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Image Sharpening">
+                            <MenuItem.Items>
+                                <MenuItem Header="Spatial Domain">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Roberts algorithm" Click="click_sharpen_roberts"/>
+                                        <MenuItem Header="Sobel algorithm" Click="click_sharpen_sobel"/>
+                                        <MenuItem Header="Prewitt algorithm" Click="click_sharpen_prewitt"/>
+                                        <MenuItem Header="Laplacian algorithm" Click="click_sharpen_laplacian"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
+                                <MenuItem Header="Frequency Domain">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="Ideal HighPass" Click="Click_Frequency_Ideal_HighPass"/>
+                                        <MenuItem Header="Butterworth LowPass" Click="Click_Frequency_Butterworth_HighPass"/>
+                                        <MenuItem Header="Gaussian LowPass" Click="Click_Frequency_Gaussian_HighPass"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Morphological Operation">
+                            <MenuItem.Items>
+                                <MenuItem Header="Erosion" Click="Click_Morphological_Erosion" />
+                                <MenuItem Header="Dilation" Click="Click_Morphological_Dilation" />
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Image Damage">
+                            <MenuItem.Items>
+                                <MenuItem Header="Add Noise" Click="Click_add_noise" />
+                            </MenuItem.Items>
+                        </MenuItem>
+                        <MenuItem Header="Image Recovery">
+                            <MenuItem.Items>
+                                <MenuItem Header="Mean algorithm" Click="Click_recover_mean"/>
+                                <MenuItem Header="Median algorithm" Click="Click_recover_median"/>
+                                <MenuItem Header="Selective algorithm" Click="Click_recover_selective"/>
+                            </MenuItem.Items>
+                        </MenuItem>
+                    </ui:MenuFlyout>
+                </ui:DropDownButton.Flyout>
+            </ui:DropDownButton>
+            <Button Content="Put Output into Input" 
+                    Margin="345,402,0,0" 
+                    VerticalAlignment="Top" 
+                    FontSize="18"
+                    Click="ButtonBase_OnClick"
+                    Width="221"/>
+            <Button Content="Export" 
+                    Margin="345,493,0,0" 
+                    VerticalAlignment="Top" 
+                    FontSize="18"
+                    Click="ButtonBase_OnClick2"
+                    Width="221"/>
+            <Button Content="Clear Storage" 
+                    Margin="71,493,0,0" 
+                    VerticalAlignment="Top" 
+                    FontSize="18"
+                    Click="ButtonBase_OnClick1"
+                    Width="237"/>
+            <TextBox HorizontalAlignment="Left" 
+                     x:Name="Error"
+                     Margin="71,20,0,0" 
+                     Opacity="0"
+                     IsReadOnly="True"
+                     TextWrapping="Wrap" 
+                     VerticalAlignment="Top" 
+                     Width="495"/>
+            <Button 
+                x:Name="ErrorCloseButton"
+                Opacity="0"
+                VerticalAlignment="Bottom" 
+                Margin="523,0,0,544"
+                Background="Transparent"
+                Click="CloseError_Click">
+                <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.ChromeClose}"/>
+            </Button>
+            
+
+
+
+        </Grid>
+    </Border>
+</UserControl>

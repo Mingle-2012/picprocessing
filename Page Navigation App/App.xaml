@@ -1,0 +1,41 @@
+﻿<Application x:Class="Page_Navigation_App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+             xmlns:local="clr-namespace:Page_Navigation_App"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Styles/Page.xaml" />
+                <ResourceDictionary Source="Styles/Image.xaml" />
+                <ResourceDictionary Source="Styles/Text.xaml" />
+                <ResourceDictionary Source="Styles/Button.xaml" />
+                <ResourceDictionary Source="Styles/Label.xaml" />
+                <ResourceDictionary Source="Styles/Border.xaml" />
+                <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
+                <ui:ThemeResources CanBeAccessedAcrossThreads="False">
+
+                    <ui:ThemeResources.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground" Color="#FFEDEDED" />
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Dark">
+                            <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground" Color="#FF202020" />
+                        </ResourceDictionary>
+                    </ui:ThemeResources.ThemeDictionaries>
+
+                </ui:ThemeResources>
+                <ui:XamlControlsResources />
+
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+
+    </Application.Resources>
+    
+</Application>
