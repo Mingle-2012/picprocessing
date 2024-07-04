@@ -1,0 +1,41 @@
+﻿<Window x:Class="Page_Navigation_App.Windows.ProcessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Page_Navigation_App.Windows"
+        mc:Ignorable="d"
+        Title="计算中" 
+        Icon="/Images/icon.ico"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Height="80" 
+        Width="300">
+
+    <Grid>
+        <Border Background="#212529"
+                CornerRadius="20"
+                BorderBrush="White"
+                BorderThickness="1"
+                >
+
+        </Border>
+        <Label Content="Waiting"
+               x:Name="Label"
+               Margin="19,0,0,0"
+               Style="{StaticResource Label_Style}" Height="52" Width="143"
+               />
+        <ProgressBar HorizontalAlignment="Center" 
+                     x:Name="Progress"
+                        Height="10" 
+                        Margin="0,45,0,0" 
+                        Style="{StaticResource CustomProgressBar}"
+                        Value="3"
+                        VerticalAlignment="Top" 
+                        Width="272"/>
+
+    </Grid>
+</Window>

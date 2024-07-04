@@ -9,51 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0050a8cd-bdf9-4fae-97be-f542e150a906" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Page Navigation App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Page Navigation App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/customer_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/home_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/img_customer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/img_setting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/img_shipment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/img_transaction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/order_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/product_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/setting_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/shipment_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Images/transaction_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/RefinedUI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/RefinedUI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Styles/Button.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/Styles/Button.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Utilities/DataTemplate.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/Utilities/DataTemplate.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/About.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/View/About.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/About.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/View/About.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Customers.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Customers.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Home.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/View/Home.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Home.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/View/Home.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Model.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/View/Model.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Orders.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Orders.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Products.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Products.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Settings.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/View/Settings.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/CustomerVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/NavigationVM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/ViewModel/NavigationVM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/OrderVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/ProductVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/SettingVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/ShipmentVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/ViewModel/TransactionVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Windows/PopWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/Windows/PopWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/Windows/PopWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Page Navigation App/Windows/PopWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/resr/weights/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page Navigation App/resr/weights/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Test.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="0050a8cd-bdf9-4fae-97be-f542e150a906" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a28906d8207e4dc9b2d356142ef482dce8600/d5/8b493b77/Cv2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8cd4774e26340669b6519a6df2f0d00f874b0/28/7818c85b/StaticResourceExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8cd4774e26340669b6519a6df2f0d00f874b0/46/639c7bf4/HeaderedItemsControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Data/cs/CV2/Page Navigation App/View/About.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -90,34 +47,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Page Navigation App.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.RefinedUI.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Test.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Publish to folder.Publish Page Navigation App to folder (1).executor&quot;: &quot;Run&quot;,
-    &quot;Publish to folder.Publish Page Navigation App to folder (2).executor&quot;: &quot;Run&quot;,
-    &quot;Publish to folder.Publish Page Navigation App to folder (3).executor&quot;: &quot;Run&quot;,
-    &quot;Publish to folder.Publish Page Navigation App to folder.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Page Navigation App.executor": "Run",
+    ".NET Project.RefinedUI.executor": "Run",
+    ".NET Project.Test.executor": "Run",
+    ".NET Project.VividRestoration.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Publish to folder.Publish Page Navigation App to folder (1).executor": "Run",
+    "Publish to folder.Publish Page Navigation App to folder (2).executor": "Run",
+    "Publish to folder.Publish Page Navigation App to folder (3).executor": "Run",
+    "Publish to folder.Publish Page Navigation App to folder.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\XiaoWu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\XiaoWu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\XiaoWu\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\XiaoWu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\XiaoWu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\XiaoWu\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Publish to folder.Publish Page Navigation App to folder">
     <configuration name="Publish Page Navigation App to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Page Navigation App/bin/Release/net6.0-windows/win-x64/publish" target_framework="net6.0-windows" uuid_high="6350786795807195185" uuid_low="-8525962923412675096" />
@@ -286,6 +244,7 @@
       <workItem from="1720026475877" duration="312000" />
       <workItem from="1720076692687" duration="1384000" />
       <workItem from="1720078801598" duration="1839000" />
+      <workItem from="1720080724893" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -295,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719849254354</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gitignore没调好，有些重要代码文件没加上。">
+      <option name="closed" value="true" />
+      <created>1720080952277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720080952277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +284,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="Gitignore没调好，有些重要代码文件没加上。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gitignore没调好，有些重要代码文件没加上。" />
   </component>
 </project>
