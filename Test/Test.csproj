@@ -15,12 +15,15 @@
       <Content Include="esr\**\*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-      <Content Include="resr\**\*">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
       <Content Include="resrnoenv\**\*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Remove="resr\**" />
+      <EmbeddedResource Remove="resr\**" />
+      <None Remove="resr\**" />
     </ItemGroup>
 
 
@@ -30,11 +33,6 @@
       <PackageReference Include="OpenCvSharp4" Version="4.10.0.20240616" />
       <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20240616" />
       <PackageReference Include="System.Drawing.Common" Version="8.0.6" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <Folder Include="resr\results\" />
     </ItemGroup>
 
 </Project>

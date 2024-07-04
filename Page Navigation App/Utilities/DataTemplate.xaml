@@ -14,22 +14,7 @@
     <DataTemplate DataType="{x:Type vm:ModelVM}">
         <view:Model />
     </DataTemplate>
-
-    <DataTemplate DataType="{x:Type vm:CustomerVM}">
-        <view:Customers />
-    </DataTemplate>
-
-    <DataTemplate DataType="{x:Type vm:ProductVM}">
-        <view:Products />
-    </DataTemplate>
-
-    <DataTemplate DataType="{x:Type vm:OrderVM}">
-        <view:Orders />
-    </DataTemplate>
-
-    <DataTemplate DataType="{x:Type vm:SettingVM}">
-        <view:Settings />
-    </DataTemplate>
+  
     <sys:String x:Key="LongText" xmlns:sys="clr-namespace:System;assembly=mscorlib">
         GNU AFFERO GENERAL PUBLIC LICENSE
                Version 3, 19 November 2007

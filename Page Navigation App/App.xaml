@@ -17,6 +17,7 @@
                 <ResourceDictionary Source="Styles/Button.xaml" />
                 <ResourceDictionary Source="Styles/Label.xaml" />
                 <ResourceDictionary Source="Styles/Border.xaml" />
+                <ResourceDictionary Source="Styles/ProcessBar.xaml" />
                 <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
                 <ui:ThemeResources CanBeAccessedAcrossThreads="False">
 

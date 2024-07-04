@@ -12,29 +12,53 @@
              >
     <Grid>
         <Border Background="#212529"
-            CornerRadius="0,20,20,0" Margin="0,5,5,0"/>
+            CornerRadius="0,20,20,0" Margin="0,5,5,0">
+            
+        </Border>
         <Grid VerticalAlignment="Top" 
               Margin="30"
               HorizontalAlignment="Center">
+
+            <Image Margin="204,24,216,24" Source="/Images/logo.png" />
             <Label Content="特别鸣谢：曹桂涛老师 各位助教老师               "
                    FontSize="16"
-                   Foreground="White" Margin="13,40,271,-40"
+                   Foreground="White" Margin="136,166,148,-168"
                    />
-            <Label Content="Co-authors: 张耘彪 武泽恺         "
+            
+            <Label Content="Co-authors: "
                    FontSize="16"
-                   Foreground="White" Margin="13,17,2,-17"/>
+                   Foreground="White" Margin="81,193,67,-57"/>
+
         </Grid>
+        <Button Content="武泽恺10225101429" 
+                Margin="205,224,0,0" 
+                VerticalAlignment="Top" 
+                Style="{StaticResource LinkButtonStyle}"
+                Click="Button_Click"
+                />
+        <Button Content="张耘彪10225101437" 
+                Margin="357,224,0,0" 
+                VerticalAlignment="Top" 
+                Style="{StaticResource LinkButtonStyle}"
+                Click="Button_Click_1"
+                />
+        <Button Content="https://github.com/Mingle-2012/picprocessing" 
+                Margin="0,249,0,0" 
+                VerticalAlignment="Top"
+                Style="{StaticResource LinkButtonStyle}" 
+                HorizontalAlignment="Center"
+                Click="Click_button" />
         <Grid VerticalAlignment="Top" Height="484" Margin="43,116,43,0">
             <Border Background="#112529"
                     BorderBrush="White"
                     BorderThickness="1"
-                    CornerRadius="8">
-                    <ScrollViewer VerticalScrollBarVisibility="Auto">
-                        <TextBlock TextWrapping="Wrap"
+                    CornerRadius="8" Margin="0,173,0,41">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,-1,0,-1">
+                    <TextBlock TextWrapping="Wrap"
                         Text="{StaticResource LongText}" 
                         xml:space="preserve"
-                        Foreground="Snow" />
-                    </ScrollViewer>
+                        Foreground="Snow" Height="7880" />
+                </ScrollViewer>
             </Border>
 
         </Grid>

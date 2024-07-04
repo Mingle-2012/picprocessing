@@ -584,7 +584,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("a", "b", "c", "d");
+                var window = new PopWindow("a","positive", "b", "positive", "c","positive", "d","positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -750,7 +750,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("cutoff");
+                var window = new PopWindow("cutoff", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -771,7 +771,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("cutoff", "order");
+                var window = new PopWindow("cutoff","positive(0-255)","order", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -790,7 +790,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
-                var window = new PopWindow("cutoff");
+                var window = new PopWindow("cutoff", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -866,7 +866,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("cutoff");
+                var window = new PopWindow("cutoff", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -886,7 +886,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("cutoff");
+                var window = new PopWindow("cutoff", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -906,7 +906,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("cutoff");
+                var window = new PopWindow("cutoff", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -925,7 +925,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
-                var window = new PopWindow("kernel");
+                var window = new PopWindow("kernel", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -945,7 +945,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("kernel");
+                var window = new PopWindow("kernel", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -965,7 +965,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("kernel");
+                var window = new PopWindow("kernel", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -986,7 +986,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("kernel");
+                var window = new PopWindow("kernel", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1006,7 +1006,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("prob");
+                var window = new PopWindow("prob", "double(0-1)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1070,7 +1070,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
                 
-                var window = new PopWindow("height", "width");
+                var window = new PopWindow("height", "positive", "width", "positive");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1090,7 +1090,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("angle");
+                var window = new PopWindow("angle", "positive(0-360)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1110,7 +1110,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("x", "y");
+                var window = new PopWindow("x", "Integer", "y", "Integer");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1142,7 +1142,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("src", "dst");
+                var window = new PopWindow("src","array([3][2])", "dst", "array([3][2])");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1163,7 +1163,7 @@ namespace Page_Navigation_App.View
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,false);
 
-                var window = new PopWindow("threshold");
+                var window = new PopWindow("threshold", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1183,7 +1183,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,true);
-                var window = new PopWindow("threshold");
+                var window = new PopWindow("threshold", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1203,7 +1203,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,true);
-                var window = new PopWindow("threshold");
+                var window = new PopWindow("threshold", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -1223,7 +1223,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath,true);
-                var window = new PopWindow("threshold");
+                var window = new PopWindow("threshold", "positive(0-255)");
                 if (window.ShowDialog() != true)
                 {
                     return;

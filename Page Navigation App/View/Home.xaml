@@ -88,14 +88,14 @@
                                Width="237">
                 <ui:DropDownButton.Flyout>
                     <ui:MenuFlyout Placement="BottomEdgeAlignedLeft">
-                        <MenuItem Header="Color mode">
-                            <MenuItem.Items>
-                                <MenuItem Header="To HSV" Click="MenuItem_Click"/>
-                                <MenuItem Header="To Gray" Click="MenuItem_Click_1"/>
-                            </MenuItem.Items>
-                        </MenuItem>
                         <MenuItem Header="Basic Operation">
                             <MenuItem.Items>
+                                <MenuItem Header="Color mode">
+                                    <MenuItem.Items>
+                                        <MenuItem Header="To HSV" Click="MenuItem_Click"/>
+                                        <MenuItem Header="To Gray" Click="MenuItem_Click_1"/>
+                                    </MenuItem.Items>
+                                </MenuItem>
                                 <MenuItem Header="Arithmetic Operation">
                             <MenuItem.Items>
                                 <MenuItem Header="Add">

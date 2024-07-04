@@ -5,25 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Page_Navigation_App.Windows"
         mc:Ignorable="d"
-        xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
-        ui:WindowHelper.UseModernWindowStyle="True"
-        ui:WindowHelper.SystemBackdropType="Mica"
-        ui:TitleBar.Height="0"
-        Title="Key in parameters" 
+        Title="请传入参数" 
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Icon="/Images/icon.ico"
         Background="Transparent"
-        Height="230" 
-        Width="300">
+        Height="260" 
+        Width="400">
     <Grid>
-        <Border 
-            Background="#212529"
-            CornerRadius="20" />
+        <Border Background="#212529"
+                CornerRadius="20"
+                BorderBrush="White"
+                BorderThickness="1"
+        >
+
+        </Border>
         <Label 
-               Margin="18,20,20,0" 
+               Margin="16,41,0,0" 
                Style="{StaticResource Label_Style}"
                VerticalAlignment="Top" 
-               Width="85" 
+               Width="122" 
                Height="35"
                HorizontalContentAlignment="Center"
                Content="param1"
@@ -31,15 +34,26 @@
                >
 
         </Label>
+        <Label 
+           Margin="282,39,0,0" 
+           Style="{StaticResource Label_Style}"
+           VerticalAlignment="Top" 
+           Width="108" 
+           Height="35"
+           Opacity="0.6"
+           HorizontalContentAlignment="Center"
+           Content="hint1"
+           x:Name="hint1"
+           />
         <TextBox TextWrapping="Wrap" 
                  x:Name="value1"
                  TabIndex="1"
-                 Margin="123,14,54,169" Height="20"/>
+                 Margin="143,37,118,176" Height="20"/>
         <Label 
-            Margin="18,55,20,0" 
+            Margin="16,80,0,0" 
             Style="{StaticResource Label_Style}"
             VerticalAlignment="Top" 
-            Width="85" 
+            Width="122" 
             Height="35"
             HorizontalContentAlignment="Center"
             Content="param2"
@@ -48,12 +62,22 @@
         <TextBox TextWrapping="Wrap" 
                  x:Name="value2"
                  TabIndex="2"
-                 Margin="123,53,54,129" Height="20"/>
+                 Margin="143,76,118,137" Height="20"/>
+        <Label Margin="282,78,0,0" 
+               Style="{StaticResource Label_Style}"
+               VerticalAlignment="Top" 
+               Width="108" 
+               Height="35"
+               Opacity="0.6"
+               HorizontalContentAlignment="Center"
+               Content="hint2"
+               x:Name="hint2"
+               />
         <Label 
-            Margin="18,94,20,0" 
+            Margin="16,119,0,0" 
             Style="{StaticResource Label_Style}"
             VerticalAlignment="Top" 
-            Width="85" 
+            Width="122" 
             Height="35"
             HorizontalContentAlignment="Center"
             Content="param3"
@@ -61,12 +85,22 @@
         <TextBox TextWrapping="Wrap" 
                  x:Name="value3"
                  TabIndex="3"
-                 Margin="123,91,54,89" Height="20"/>
+                 Margin="143,115,118,98" Height="20"/>
+        <Label Margin="282,117,0,0" 
+               Style="{StaticResource Label_Style}"
+               VerticalAlignment="Top" 
+               Width="108" 
+               Height="35"
+               Opacity="0.6"
+               HorizontalContentAlignment="Center"
+               Content="hint3"
+               x:Name="hint3"
+               />
         <Label 
-            Margin="18,133,20,0" 
+            Margin="16,159,0,0" 
             Style="{StaticResource Label_Style}"
             VerticalAlignment="Top" 
-            Width="85" 
+            Width="122" 
             Height="35"
             HorizontalContentAlignment="Center"
             Content="param4"
@@ -74,18 +108,28 @@
         <TextBox TextWrapping="Wrap" 
                  x:Name="value4"
                  TabIndex="4"
-                 Margin="123,132,54,51" Height="20"/>
+                 Margin="143,155,118,58" Height="20"/>
+        <Label Margin="282,157,0,0" 
+               Style="{StaticResource Label_Style}"
+               VerticalAlignment="Top" 
+               Width="108" 
+               Height="35"
+               Opacity="0.6"
+               HorizontalContentAlignment="Center"
+               Content="hint4"
+               x:Name="hint4"
+               />
         <Button Content="Submit" 
-                Margin="0,179,0,0" 
+                Margin="0,203,0,0" 
                 VerticalAlignment="Top" 
-                Width="246" 
+                Width="136" 
                 HorizontalAlignment="Center" 
                 Click="Submit_Click"
                 />
-        
+
         <Button x:Name="CloseApp"
                 Style="{StaticResource ExitApp}"
-                Click="CloseApp_Click" />
+                Click="CloseApp_Click" Margin="0,0,10,0" />
 
     </Grid>
 

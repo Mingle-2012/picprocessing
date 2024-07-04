@@ -91,6 +91,7 @@
 
             <Grid Grid.Column="1">
 
+
                 <ContentControl x:Name="Pages"
                                 Content="{Binding CurrentView}" />
 

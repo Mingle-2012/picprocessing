@@ -48,9 +48,6 @@
     <ProjectReference Include="..\AppApi\AppApi.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="result\" />
-    <Folder Include="Temp\" />
-  </ItemGroup>
+  
 
 </Project>

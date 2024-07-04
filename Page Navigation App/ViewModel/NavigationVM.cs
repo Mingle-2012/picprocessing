@@ -28,28 +28,14 @@ namespace Page_Navigation_App.ViewModel
         public ICommand ModelCommand { get; set; }
 
         private void Home(object obj) => CurrentView = new HomeVM();
-        private void Customer(object obj) => CurrentView = new CustomerVM();
-        private void Product(object obj) => CurrentView = new ProductVM();
-        private void Order(object obj) => CurrentView = new OrderVM();
-        private void Transaction(object obj) => CurrentView = new TransactionVM();
-        private void Shipment(object obj) => CurrentView = new ShipmentVM();
-        private void Setting(object obj) => CurrentView = new SettingVM();
         private void About(object obj) => CurrentView = new AboutVM();
         private void Model(object obj) => CurrentView = new ModelVM();
 
         public NavigationVM()
         {
             HomeCommand = new RelayCommand(Home);
-            CustomersCommand = new RelayCommand(Customer);
-            ProductsCommand = new RelayCommand(Product);
-            OrdersCommand = new RelayCommand(Order);
-            TransactionsCommand = new RelayCommand(Transaction);
-            ShipmentsCommand = new RelayCommand(Shipment);
-            SettingsCommand = new RelayCommand(Setting);
             AboutCommand = new RelayCommand(About);
             ModelCommand = new RelayCommand(Model);
-
-            // Startup Page
             CurrentView = new HomeVM();
         }
     }

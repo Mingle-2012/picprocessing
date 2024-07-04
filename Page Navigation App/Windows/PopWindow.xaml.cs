@@ -25,36 +25,52 @@ namespace Page_Navigation_App.Windows
         public object parameter3 { get; set; }
         public object parameter4 { get; set; }
 
-        public PopWindow(string paramName1, string paramName2=null, string paramName3 = null, string paramName4 = null)
+        public PopWindow(string paramName1, 
+                         string hintt1,
+                         string paramName2 = null, 
+                         string hintt2 = null,
+                         string paramName3 = null, 
+                         string hintt3 = null,
+                         string paramName4 = null,
+                         string hintt4 = null)
+                    
         {
             InitializeComponent();
             param1.Content = paramName1;
+            hint1.Content = hintt1;
             if(string.IsNullOrEmpty(paramName2))
             {
                 value2.Visibility = Visibility.Collapsed;
                 param2.Visibility = Visibility.Collapsed;
+                hint2.Visibility = Visibility.Collapsed;
             }
             else
             {
                 param2.Content = paramName2;
+                hint2.Content = hintt2;
+
             }
             if (string.IsNullOrEmpty(paramName3))
             {
                 value3.Visibility = Visibility.Collapsed;
                 param3.Visibility = Visibility.Collapsed;
+                hint3.Visibility = Visibility.Collapsed;
             }
             else
             {
                 param3.Content = paramName3;
+                hint3.Content = hintt3;
             }
             if (string.IsNullOrEmpty(paramName4))
             {
                 value4.Visibility = Visibility.Collapsed;
                 param4.Visibility = Visibility.Collapsed;
+                hint4.Visibility = Visibility.Collapsed;
             }
             else
             {
                 param4.Content = paramName4;
+                hint4.Content = hintt4;
             }
         }
 

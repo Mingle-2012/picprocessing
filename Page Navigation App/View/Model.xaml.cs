@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -292,7 +293,7 @@ namespace Page_Navigation_App.View
             {
                 if (!CheckImagePath()) return;
                 var img = Apis.LoadImage(_imagePath, false);
-                var window = new PopWindow("origin", "sharpen");
+                var window = new PopWindow("origin","double(>0.1)","sharpen","double(>0.1)");
                 if (window.ShowDialog() != true)
                 {
                     return;
@@ -327,11 +328,12 @@ namespace Page_Navigation_App.View
             return (double)o;
         }
 
-        private void Click_g1(object sender, RoutedEventArgs e)
+        private async void Click_g1(object sender, RoutedEventArgs e)
         {
             try
             {
                 if (!CheckImagePath()) return;
+
                 var dstDir = ModelUtil.InputPath1;
                 if (!Directory.Exists(dstDir))
                 {
@@ -339,10 +341,38 @@ namespace Page_Navigation_App.View
                 }
                     
                 File.Copy(_imagePath, Path.Combine(dstDir,"test.jpg"), true);
-                ModelUtil.GetRes(ModelUtil.py, ModelUtil.scriptname, ModelUtil.working_esr);
+
+
+                var window = new ProcessWindow();
+                window.Show();
+                window.SetStatus("Processing...");
+                window.SetProgress(3);
+
+                var task = Task.Run(() =>
+                {
+                    for (var i = 3; i < 99; i++)
+                    {
+                        Task.Delay(30).Wait();
+                        Application.Current.Dispatcher.Invoke(() => window.SetProgress(i));
+                    }
+                });
+                
+                await Task.Run(() =>
+                {
+                    ModelUtil.GetRes(ModelUtil.py, ModelUtil.scriptname, ModelUtil.working_esr);
+                });
+
+                await task;
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     var img = Apis.LoadImage(ModelUtil.OutputPath1, false);
+                    
+                    window.SetStatus("Completed");
+                    window.SetProgress(100);
+                    
+                    Thread.Sleep(2000);
+                    window.Close();
+                    
                     SaveAndUpdate(img);
                 });
             }
@@ -351,7 +381,8 @@ namespace Page_Navigation_App.View
                 ShowError(ex);
             }
         }
-        private void Click_g2(object sender, RoutedEventArgs e)
+
+        private async void Click_g2(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -361,15 +392,33 @@ namespace Page_Navigation_App.View
                 {
                     Directory.CreateDirectory(dstDir);
                 }
-                    
-                Console.WriteLine(Path.Combine(dstDir ,"test.jpg"));
                 File.Copy(_imagePath, Path.Combine(dstDir,"test.jpg"), true);
-                Console.WriteLine(Directory.GetCurrentDirectory());
-                ModelUtil.GetRes("cmd", "/c .\\resr.exe -i test.jpg -o output.png", ModelUtil.working_exe);
+
+                var window = new ProcessWindow();
+                window.Show();
+                window.SetStatus("Processing...");
+                window.SetProgress(3);
+                var task = Task.Run(() =>
+                {
+                    for (var i = 3; i < 99; i++)
+                    {
+                        Task.Delay(5).Wait();
+                        Application.Current.Dispatcher.Invoke(() => window.SetProgress(i));
+                    }
+                });
                 
+                await Task.Run(() =>
+                {
+                    ModelUtil.GetRes("cmd", "/c .\\resr.exe -i test.jpg -o output.png", ModelUtil.working_exe);
+                });
+
+                await task;
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     var img = Apis.LoadImage(ModelUtil.OutputPath3, false);
+                    window.SetStatus("Completed");
+                    window.SetProgress(100);
+                    window.Close();
                     SaveAndUpdate(img);
                 });
             }
@@ -379,7 +428,7 @@ namespace Page_Navigation_App.View
             }
         }
         
-        private void Click_g3(object sender, RoutedEventArgs e)
+        private async void Click_g3(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -389,15 +438,33 @@ namespace Page_Navigation_App.View
                 {
                     Directory.CreateDirectory(dstDir);
                 }
-                    
-                Console.WriteLine(Path.Combine(dstDir ,"test.jpg"));
                 File.Copy(_imagePath, Path.Combine(dstDir,"test.jpg"), true);
-                Console.WriteLine(Directory.GetCurrentDirectory());
-                ModelUtil.GetRes("cmd", "/c .\\resr.exe -i test.jpg -o output.png", ModelUtil.working_exe);
                 
+                var window = new ProcessWindow();
+                window.Show();
+                window.SetStatus("Processing...");
+                window.SetProgress(3);
+                var task = Task.Run(() =>
+                {
+                    for (var i = 3; i < 99; i++)
+                    {
+                        Task.Delay(5).Wait();
+                        Application.Current.Dispatcher.Invoke(() => window.SetProgress(i));
+                    }
+                });
+                
+                await Task.Run(() =>
+                {
+                    ModelUtil.GetRes("cmd", "/c .\\resr.exe -i test.jpg -o output.png", ModelUtil.working_exe);
+                });
+
+                await task;
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     var img = Apis.LoadImage(ModelUtil.OutputPath3, false);
+                    window.SetStatus("Completed");
+                    window.SetProgress(100);
+                    window.Close();
                     SaveAndUpdate(img);
                 });
             }
