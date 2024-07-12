@@ -465,6 +465,16 @@ namespace Page_Navigation_App.View
                     window.SetStatus("Completed");
                     window.SetProgress(100);
                     window.Close();
+
+                    var window2 = new PopWindow("origin","double(>0.1)","sharpen","double(>0.1)");
+                    if (window2.ShowDialog() != true)
+                    {
+                        return;
+                    }
+                    
+                    img = Apis.SharpenColoredImageSobel(img, 
+                        ToDouble(window2.parameter1 ?? 1.2), 
+                        ToDouble(window2.parameter2 ?? 0.1));
                     SaveAndUpdate(img);
                 });
             }
